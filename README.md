@@ -48,7 +48,7 @@ def sampleBeforeTestSuite(TestSuiteContext testSuiteContext) {
 }
 ```
 
-2. Mark our keywords those need to be separated as a test case in the JUnit report file
+2. Mark our keywords that need to be separated as a test case in the JUnit report file
 
 * The first way to do that is to use `@JUnitTestCase` annotation
 ```groovy
