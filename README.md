@@ -128,7 +128,7 @@ CustomJUnitKeywords.export(String reportFolder, String reportName)
 CustomJUnitKeywords.markJUnitTestCase()
 ```
 
-4. `@JUnitTestCase`
+2. `@JUnitTestCase`
 ```groovy
 // An annotation for marking a keyword as a test case in the JUnit file
 @Keyword
@@ -139,13 +139,13 @@ def isElementPresent(TestObject to, int timeout){
 }
 ```
 
-2. `CustomJUnitTestCaseUtils`
+3. `CustomJUnitTestCaseUtils`
 ```groovy
 // Mark a keyword call as a test case in our custom JUnit report
 CustomJUnitTestCaseUtils.markJUnitTestCase()
 ```
 
-3. `JUnitExporter`
+4. `JUnitExporter`
 ```groovy
 // Export our custom JUnit report to the test suite's report folder
 JUnitExporter.export()
