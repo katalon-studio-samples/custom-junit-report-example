@@ -1,0 +1,101 @@
+{
+  "keywordFileContentHash": "965A01F8676E97A9CAA7199CB1056EEF",
+  "keywordClasses": [
+    {
+      "name": "com.katalon.customjunit.CustomJUnitKeywords",
+      "keywordMethods": [
+        {
+          "name": "overrideCustomKeywordInvoker",
+          "parameters": [
+            {
+              "name": "customKeywordsClass",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Class",
+                "unresolvedClassName": "Class",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [
+                  {
+                    "fullClassName": "java.lang.Object",
+                    "unresolvedClassName": "?",
+                    "isArray": false,
+                    "isGnericsPlaceHolder": false,
+                    "hasImmutableClassName": false,
+                    "genericsTypes": [],
+                    "errorOnParsing": false
+                  }
+                ],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "export",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "export",
+          "parameters": [
+            {
+              "name": "reportFolder",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "export",
+          "parameters": [
+            {
+              "name": "reportFolder",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "reportName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "markJUnitTestCase",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

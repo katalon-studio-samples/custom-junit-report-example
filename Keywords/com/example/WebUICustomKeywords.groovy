@@ -8,6 +8,8 @@ import org.jsoup.select.Elements
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
 
+import com.katalon.junit.CustomJUnitTestCaseUtils
+import com.katalon.junit.JUnitTestCase
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.TestObject
@@ -25,8 +27,17 @@ public class WebUICustomKeywords {
 	 * @return true if element present, otherwise false
 	 */
 	@Keyword
+	@JUnitTestCase
 	def isElementPresent(TestObject to, int timeout){
 		//Use Katalon built-in function to find elements with time out 1 seconds
+		List<WebElement> elements = WebUiBuiltInKeywords.findWebElements(to, timeout)
+		return elements.size() > 0
+	}
+	
+	@Keyword
+	def isElementPresent2(TestObject to, int timeout){
+		//Use Katalon built-in function to find elements with time out 1 seconds
+		CustomJUnitTestCaseUtils.markJUnitTestCase();
 		List<WebElement> elements = WebUiBuiltInKeywords.findWebElements(to, timeout)
 		return elements.size() > 0
 	}
