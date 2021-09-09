@@ -61,12 +61,12 @@ import com.katalon.junit.JUnitTestCase
 public class WebUICustomKeywords {
   // ...
 
-	@Keyword
-	@JUnitTestCase
-	def isElementPresent(TestObject to, int timeout) {
-		List<WebElement> elements = WebUiBuiltInKeywords.findWebElements(to, timeout)
-		return elements.size() > 0
-	}
+  @Keyword
+  @JUnitTestCase
+  def isElementPresent(TestObject to, int timeout) {
+    List<WebElement> elements = WebUiBuiltInKeywords.findWebElements(to, timeout)
+    return elements.size() > 0
+  }
 
   // ...
 }
@@ -83,12 +83,12 @@ import com.katalon.junit.CustomJUnitTestCaseUtils
 public class WebUICustomKeywords {
   // ...
 
-	@Keyword
-	def isElementPresent(TestObject to, int timeout) {
+  @Keyword
+  def isElementPresent(TestObject to, int timeout) {
     CustomJUnitTestCaseUtils.markJUnitTestCase();
-		List<WebElement> elements = WebUiBuiltInKeywords.findWebElements(to, timeout)
-		return elements.size() > 0
-	}
+    List<WebElement> elements = WebUiBuiltInKeywords.findWebElements(to, timeout)
+    return elements.size() > 0
+  }
 
   // ...
 }
