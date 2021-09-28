@@ -52,7 +52,7 @@ public class CustomJUnitTestCaseUtils {
 		ILogRecord[] subSteps = testStep.getChildRecords();
 		ILogRecord[] normalSteps = Arrays.stream(subSteps).filter(subStepI -> !isJUnitTestCaseMarker(subStepI))
 				.collect(Collectors.toList()).toArray(new ILogRecord[] {});
-		testStep.setChildRecords(normalSteps);
+//		testStep.setChildRecords(normalSteps); // Only support from version 8.1.0
 	}
 
 	private static boolean isCustomJUnitTestCase(ILogRecord testStep) {

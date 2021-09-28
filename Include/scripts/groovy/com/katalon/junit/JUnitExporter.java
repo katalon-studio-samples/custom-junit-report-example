@@ -121,7 +121,7 @@ public class JUnitExporter {
 
 		List<ILogRecord> allTestCases = new ArrayList<>();
 
-		ILogRecord[] testCases = suiteLogEntity.filterFinalTestCasesResult();
+		ILogRecord[] testCases = suiteLogEntity.getChildRecords();
 		allTestCases.addAll(Arrays.asList(testCases));
 		allTestCases.addAll(CustomJUnitTestCaseUtils.collectJUnitTestCases(testCases));
 
